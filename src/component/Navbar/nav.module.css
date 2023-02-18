@@ -63,7 +63,7 @@
 
 }
 .input div
-{   
+{   cursor: pointer;
     font-size:26px;
    display: flex;
    align-items: center;

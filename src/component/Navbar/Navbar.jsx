@@ -4,14 +4,23 @@ import { DiCodeigniter } from 'react-icons/di';
 import { GrFormSearch } from "react-icons/gr";
 import { FiUser } from "react-icons/fi";
 import { BiFilter } from "react-icons/bi";
-
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+   const nav1=useNavigate();
+   const nav2=useNavigate();
+   const nav3=useNavigate();
+   const nav4=useNavigate();
+   
 
 
   return (
     <>
     <div className={style.main}>
+      {
+       
+      }
           
         {/* 1 */}
           <div className={style.first}>
@@ -33,10 +42,10 @@ const Navbar = () => {
           {/* 3 */}
 
           <div className={style.first} >
-            <nav><p>Statistics</p></nav>
-            <nav><p>Overview</p></nav>
-            <nav><p>Dashboadrd</p></nav>
-            <nav><p>Analytics</p></nav>
+            <nav onClick={()=>{nav1("/Statistics")}}><p>Statistics</p></nav>
+            <nav onClick={()=>{nav2("/Overview")}} ><p>Overview</p></nav>
+            <nav onClick={()=>{nav3("/Dashboadrd")}} ><p>Dashboadrd</p></nav>
+            <nav onClick={()=>{nav4("/Analytics")} }><p>Analytics</p></nav>
           </div>
 
         {/* 4 */}
