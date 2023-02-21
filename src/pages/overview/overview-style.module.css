@@ -11,6 +11,8 @@
    position:absolute;
    height:620.5px;
    width: 100%;
+   /* background-color: rgba(39, 37, 37, 0.655);
+   z-index: 1; */
    
 }
 .second
@@ -154,7 +156,7 @@
 
 .second div:nth-of-type(3) nav:nth-of-type(3)  div:nth-of-type(1)
 {
-    background-color:#ff8e66;
+    background-color:#33231e;
     padding: 0px;
     height: 40px;
     width: 40px;
@@ -181,12 +183,116 @@
 
 .second div:nth-of-type(4)
 {
-    background-color: orange; 
+    
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
 }
+.pro1
+{  
+    
+    height: 100%;
+    width: 180px;
+    display: flex;
+    padding:0px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.des
+{   
+    
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+    width: 60px;
+}
+.textw
+{    padding:0px;
+     margin:0px;
+     
+    height: 70px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    color: var(--text);
+}
+.textw p:nth-of-type(2)
+{ margin-top: 5px;
+  font-size: 11px;
+  
+}
+
+.pro2
+{
+    
+    height: 100%;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+
+
+
 .third
 {
-    background-color: aqua;
+  
     position:relative;
     height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
     
 }
+
+.chartdiv
+{
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px -1px rgba(128, 128, 128, 0.522);
+}
+.chartdiv nav:nth-of-type(1)
+{
+  
+  height: 60px;
+  width: 100px;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.chartdiv nav:nth-of-type(1) p:first-child
+{
+  
+  font-size: 11px;
+}
+.chartdiv nav:nth-of-type(1) p:last-child
+{
+  
+  font-size: 19px;
+  font-weight: 700;
+  color: black;
+  margin-top: 5px;
+}
+
+.chartdiv nav:nth-of-type(2)
+{
+  
+  height: 60px;
+  width: 1300px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+
