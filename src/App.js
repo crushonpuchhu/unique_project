@@ -8,6 +8,8 @@ import Analytics from './pages/analytics/Analytics';
 
 function App() {
 
+
+
   return (
     <div className="App">
 
@@ -17,10 +19,10 @@ function App() {
 
         <Routes>
 
-          <Route path="/Statistics" element={<Statistics/>} />
-          <Route path="/" element={<Overview/>} />
-          <Route path="/Overview" element={<Overview/>} />
-          <Route path="/Dashboadrd" element={<Dashboadrd/>} />
+          <Route path="/Statistics" element={<Statistics />} />
+          <Route path="/" element={<Overview />} />
+          <Route path="/Overview" element={<Overview />} />
+          <Route path="/Dashboadrd" element={<Dashboadrd />} />
           <Route path="/Analytics" element={<Analytics />} />
 
         </Routes>

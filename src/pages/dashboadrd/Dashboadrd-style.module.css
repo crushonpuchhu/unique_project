@@ -1,4 +1,12 @@
 .main
+{   background-color:rgba(10, 207, 59, 0.345);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img 
 {
-    background-color: greenyellow;
+  height:120px;
 }

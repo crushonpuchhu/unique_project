@@ -1,18 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import style from './overview-style.module.css'
+import style from './overview-style.module.css';
 import { FaGreaterThan } from "react-icons/fa";
 import anime from 'animejs/lib/anime.es.js';
 import { BsGraphUp } from "react-icons/bs";
 import { BiCrown } from "react-icons/bi";
-import { GoGraph } from "react-icons/go"
+import { GoGraph } from "react-icons/go";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Sector } from 'recharts';
 
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
-
-
-
-
+import mapu from './features.json';
 
 const Overview = () => {
 
@@ -25,6 +23,8 @@ const Overview = () => {
   const data3 = useRef();
   const data4 = useRef();
   const proge = useRef();
+
+
 
   useEffect(() => {
 
@@ -540,6 +540,9 @@ const Overview = () => {
 
 
 
+
+
+
   return (
 
 
@@ -549,6 +552,19 @@ const Overview = () => {
       <div className={style.main}>
 
         <div className={style.first}>
+
+
+          <ComposableMap>
+            <Geographies geography={mapu}>
+              {
+                ({ geographies }) =>
+                  geographies.map((geo) => (
+                    <Geography key={geo.rsmKey} geography={geo} />
+                  ))
+              }
+            </Geographies>
+          </ComposableMap>
+
 
         </div>
 
